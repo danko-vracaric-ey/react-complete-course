@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./ExpenseForm.css";
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
@@ -31,20 +31,23 @@ const ExpenseForm = () => {
     setEnteredDate(event.target.value);
   };
 
+  //sets up the object and pass it up
   const submitHandler = (e) => {
     e.preventDefault();
-
+    //stops page reload, built in behavior
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       date: new Date(enteredDate),
     };
     console.log(expenseData);
+    props.onSaveExpenseData(expenseData);
+    props.onAddNewExpense(true);
     setEnteredTitle("");
     setEnteredAmount("");
     setEnteredDate("");
   };
-
+  console.log(props.onAddNewExpense);
   return (
     <form onSubmit={submitHandler}>
       <div className="new-expense__controls">
@@ -78,6 +81,14 @@ const ExpenseForm = () => {
         </div>
       </div>
       <div className="new-expense__actions">
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            props.onAddNewExpense(true);
+          }}
+        >
+          Cancel
+        </button>
         <button type="submit">Add Expense</button>
       </div>
     </form>
