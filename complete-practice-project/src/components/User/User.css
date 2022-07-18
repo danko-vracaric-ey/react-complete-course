@@ -1,0 +1,11 @@
+div.user-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  margin: 10px;
+}
+div.user-wrapper {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
