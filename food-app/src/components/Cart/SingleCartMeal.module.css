@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.info h3 {
+  width: 80px;
+  color: red;
+  font-weight: bold;
+}
+.priceAmount {
+  display: flex;
+}

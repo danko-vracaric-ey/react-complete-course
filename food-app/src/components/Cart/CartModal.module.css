@@ -1,0 +1,30 @@
+.backdrop {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.612);
+  z-index: 100;
+}
+
+.modal {
+  height: 30vh;
+  width: 60vw;
+  background-color: white;
+  z-index: 1000;
+  padding: 22px;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirmCancel {
+  display: flex;
+  justify-content: end;
+}
+.confirmCancel button {
+  margin: 10px;
+}

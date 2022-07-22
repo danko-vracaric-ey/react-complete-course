@@ -1,0 +1,12 @@
+.container {
+  width: 60vw;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}

@@ -1,0 +1,16 @@
+.container {
+  min-height: 100vh;
+  min-width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 200px;
+}
+
+.wrapper {
+  min-width: 500px;
+  min-height: 200px;
+  background-color: white;
+  padding: 30px;
+}

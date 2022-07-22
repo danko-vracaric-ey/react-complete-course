@@ -1,0 +1,25 @@
+form {
+  margin-top: 10px;
+}
+.amountType {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.amountType h4 {
+  margin-right: 10px;
+}
+.amountType input {
+  width: 40px;
+  height: 25px;
+}
+
+button {
+  color: white;
+  background-color: brown;
+  font-size: large;
+  border-radius: 20px;
+  margin-top: 10px;
+  width: 100px;
+  padding: 1.5px;
+}

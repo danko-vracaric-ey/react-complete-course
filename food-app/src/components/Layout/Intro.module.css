@@ -1,0 +1,25 @@
+.container {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  top: 300px;
+  z-index: 5;
+  font-size: medium;
+}
+
+.wrapper {
+  background-color: rgb(128, 128, 128);
+  min-width: 400px;
+  min-height: 250px;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.wrapper h1 {
+  font-weight: bold;
+}
